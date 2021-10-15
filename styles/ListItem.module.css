@@ -1,0 +1,69 @@
+.card {
+  position: relative;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  display: flex;
+  align-items: start;
+}
+
+.card img {
+  width: 100px;
+  min-width: 50px;
+  max-width: 10%;
+  height: auto;
+  margin: 0 1rem 0 0;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.metadata {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.metadata li {
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.metadata li + li::before {
+  content: "|";
+  color: lightgrey;
+  padding: 0 0.5rem;
+}
+
+.delete {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: 0;
+  font-size: 1.5rem;
+  color: lightgrey;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.delete:hover,
+.delete:focus,
+.delete:active {
+  color: #0070f3;
+}

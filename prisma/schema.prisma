@@ -1,0 +1,26 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Flick {
+  id            Int @default(autoincrement()) @id
+  title         String
+  year          Int
+  runtime       String
+  genre         String
+  plot          String
+  poster        String
+  imdbRating    String
+  imdbVotes     String
+  imdbID        String
+  type          String
+  totalSeasons  Int
+}
